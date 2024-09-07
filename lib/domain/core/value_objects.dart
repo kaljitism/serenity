@@ -8,6 +8,10 @@ abstract class ValueObject<T> {
 
   Either<ValueFailure<T>, T> get value;
 
+  bool isValid() => value.isRight();
+
+  bool isInvalid() => value.isLeft();
+
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
