@@ -6,6 +6,7 @@ environment:
   sdk: ^3.5.1
 
 dependencies:
+  bloc: ^8.1.4
   cupertino_icons: ^1.0.8
   dartz: ^0.10.1
   flutter:
